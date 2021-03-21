@@ -1,0 +1,93 @@
+server:
+  error:
+#    include-stacktrace: never
+    include-stacktrace: on_param
+
+spring:
+    datasource:
+      driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      url: jdbc:sqlserver://localhost
+      databaseName: anime
+      username: sa
+      password: Net@Coders01990
+    jpa:
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+      show-sql: true
+      hibernate:
+        ddl-auto: create-drop #update create-drop
+        format_sql: true
+
+#  spring.datasource.driverClassName=com.microsoft.sqlserver.jdbc.SQLServerDriver
+#  spring.datasource.url=jdbc:sqlserver://localhost;databaseName=anime
+#  spring.datasource.username=sa
+#  spring.datasource.password=Net@Coders01990
+#  spring.jpa.show-sql=true
+#  spring.jpa.properties.hibernate.format_sql = true
+#
+#  ## Hibernate Properties
+#  # The SQL dialect makes Hibernate generate better SQL for the chosen database
+#  spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.SQLServer2012Dialect
+#
+#  # Hibernate ddl auto (create, create-drop, validate, update)
+#  spring.jpa.hibernate.ddl-auto = update
+
+#  spring.datasource.url=jdbc:sqlserver://sqlsrv\\sqlexpress;databaseName=customer
+#  spring.datasource.username=username
+#  spring.datasource.password=password
+#spring:
+#  datasource:
+#    url: jdbc:mysql:localhost:3386/anime?useSSL=false&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+#    username: root
+#    password: root
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+
+#https://github:
+#  com/microsoft/sql-server-samples/blob/master/samples/tutorials/java/macOS/SqlServerSpringDataSample/src/main/resources/application:
+#    yml:
+#spring:
+#  datasource:
+#    url: jdbc:sqlserver://localhost:1433
+#    username: SA
+#    password: yourStrong(!)Password
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: create-drop # Defaults to "none" when NOT in embedded mode
+
+#  spring:
+#    datasource:
+#      url: jdbc:sqlserver:BDPBR2000399\SQLEXPRESS
+#      databaseName: students
+#      username: sa
+#      password: Net@Coders01990
+#      driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    jpa:
+#      hibernate:
+#        ddl-auto: update
+
+
+
+#spring:
+#  datasource:
+#    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    #      url: jdbc:sqlserver://BDPBR2000399\SQLEXPRESS:1433;databaseName=anime;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+#    #      url: jdbc:sqlserver://localhost:1433;databaseName=anime;
+#    #      url: jdbc:sqlserver://BDPBR2000399\SQLEXPRESS:1433
+#    url: jdbc:sqlserver://localhost
+#    databaseName: students
+#    #      createDatabaseIfNotExists: true
+#    #      useSSL: false
+#    #      url: jdbc:sqlserver://localhost:1433/anime?useSSL=false&createDatabaseIfNotExists=true
+#    #      url=jdbc:sqlserver://localhost:1433/anime?useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+#    username: sa
+#    password: Net@Coders01990
+#  #      platform: mssql
+#  jpa:
+#    #      database-platform: org.hibernate.dialect.SQLServer2012Dialect
+#    dialect: org.hibernate.dialect.SQLServer2012Dialect
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update #update create-drop
+#      format_sql: true
